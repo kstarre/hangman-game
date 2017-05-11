@@ -8,17 +8,19 @@ var answerList = (currentWord.split(""));
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 window.onload = function(event) {
+
 }
 
 document.onkeyup = function(event) {
 	// When user presses key that becomes their choice
 	var userChoice = event.key;
-
-	for (var i=0; i <answerList.length; i++) {
-		if (answerList.indexOf(userChoice) > -1) {
-			document.getElementById("word").innerHTML = userChoice;
-		}
+	var display = "";
+	
+	currentGuess--;
+	if (answerList.indexOf(userChoice) > -1) {
+		document.getElementById("word").innerHTML = userChoice;
 	}
+	else if ()
 }
 /*	currentGuess--;*/
 
